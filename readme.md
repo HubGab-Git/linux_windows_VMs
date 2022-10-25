@@ -12,20 +12,6 @@ This terraform project provision two instances on cloud providers:
 
 * Azure 
 
-  
-  
-
-## Table of Contents
-
-  
-
-* [Prerequisites](#prerequisites)
-
-* [Usage](#usage)
-
-
-  
-  
 
 ## Prerequisites
 

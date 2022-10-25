@@ -14,7 +14,6 @@ This terraform project provision two EC2 and provide data to log to instances by
 
 * [Usage](#usage)
 
-* [Issues](#issues)
 
   
   

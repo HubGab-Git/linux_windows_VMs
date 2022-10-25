@@ -1,3 +1,36 @@
-# Scripts to provision Linux and Windows instances 
+# Terraform code to provision Linux and Windows instances 
 
-## In each folder you can find more details about how to deploy instances in coresponding cloud provders
+## Description
+
+  
+
+This terraform project provision two instances on cloud providers:
+
+* AWS EC2
+
+* GCP 
+
+* Azure 
+
+  
+  
+
+## Table of Contents
+
+  
+
+* [Prerequisites](#prerequisites)
+
+* [Usage](#usage)
+
+
+  
+  
+
+## Prerequisites
+
+To use this project you need installed terraform and have Accounts on AWS, GCP and Azure
+
+## Usage 
+
+Detailed usage for each cloud provider inside folders in readme file 

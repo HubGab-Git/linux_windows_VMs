@@ -34,3 +34,6 @@ override.tf.json
 terraform.rc
 tfplan
 *.pem
+*.json
+private_key
+public_key

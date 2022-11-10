@@ -57,12 +57,18 @@ You need AWS account and terrafom installed
 	terraform apply --auto-approve
 	```
 
-7. After terraform apply you can connect to linux instance by SSH make sure you have downloaded into this folder "linux_windows.pem" file:
+7. Change permisions of private key:
+
+	 ```md
+	chmod 600 linux_windows.pem
+	```
+
+8. After terraform apply you can connect to linux instance by SSH make sure you have downloaded into this folder "linux_windows.pem" file:
 
 	 ```md
 	ssh -i linux_windows.pem ubuntu@< DNS name from output "linux_public_dns" >
 	```
-8. To connect windows instance by RDP please below credentilas:
+9. To connect windows instance by RDP please below credentilas:
 
     windows_public_dns as instance host
 

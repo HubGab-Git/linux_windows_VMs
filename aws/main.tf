@@ -34,5 +34,7 @@ locals {
   ports = {
     "SSH" = 22
     "RDP" = 3389
+    "HTTPS" = 443
+    "HTTP" = 80
   }
 }

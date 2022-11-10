@@ -12,3 +12,8 @@ output "windows_password" {
   description = "Administrator password for Windows instance"
   value       = rsadecrypt(aws_instance.linux_windows["vm-nebo-windows"].password_data,file("linux_windows.pem"))
 }
+
+output "linux_instance_id" {
+  description = "Instance ID of Linux Instance"
+  value       = aws_instance.linux_windows["vm-nebo-linux"].id
+}

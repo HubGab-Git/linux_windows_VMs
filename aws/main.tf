@@ -23,18 +23,20 @@ locals {
     "vm-nebo-linux" = {
       ami           = var.linux_ami,
       instance_type = var.linux_instance_type,
-      get_password  = false
+      get_password  = false,
+      user_data     = file("ssm-agent-install-ubuntu.sh")
     },
     "vm-nebo-windows" = {
       ami           = var.windows_ami,
       instance_type = var.windows_instance_type,
-      get_password  = true
+      get_password  = true,
+      user_data     = file("ssm-agent-install-windows.ps")
     }
   }
   ports = {
-    "SSH" = 22
-    "RDP" = 3389
+    "SSH"   = 22
+    "RDP"   = 3389
     "HTTPS" = 443
-    "HTTP" = 80
+    "HTTP"  = 80
   }
 }

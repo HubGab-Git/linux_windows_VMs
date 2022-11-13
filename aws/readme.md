@@ -75,3 +75,15 @@ You need AWS account and terrafom installed
     "Administrator" as user name
 
     windows_password as password for Administrator
+
+10. To connect by AWS SSM Session Manager:
+	 ```md
+	aws ssm start-session --target <instance ID from variabble linux_instance_id>
+	```
+
+11. Example connection by SSM port forwarding:
+	 ```md
+	aws ssm start-session --target <instance ID from variabble linux_instance_id> \
+                       --document-name AWS-StartPortForwardingSession \
+                       --parameters '{"portNumber":["80"],"localPortNumber":["9999"]}'
+	```

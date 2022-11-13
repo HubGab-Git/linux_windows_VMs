@@ -7,6 +7,8 @@ resource "aws_instance" "linux_windows" {
   vpc_security_group_ids      = [aws_security_group.allow_ssh_rdp.id]
   key_name                    = "linux_windows"
   associate_public_ip_address = true
+  iam_instance_profile        = aws_iam_instance_profile.linux_windows.name
+  user_data                   = each.value.user_data
   tags = {
     Name = each.key
   }
